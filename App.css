@@ -1,0 +1,65 @@
+/* Title styling */
+.title {
+  font-size: 4rem; /* Big font size */
+  font-weight: 800; /* Bold */
+  color: hsl(var(--primary)); /* Use primary color from your theme */
+  margin: 1rem 0;
+  line-height: 1.2;
+  text-transform: uppercase; /* Optional */
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem; /* Responsive for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem; /* Responsive for mobiles */
+  }
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
